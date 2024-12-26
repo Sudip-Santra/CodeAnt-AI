@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAnt AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assests/Sign-Up/sign-up-page-style.css">
+    <link rel="website icon" type="jpg" href="../CodeAnt Logo.png">
+</head>
+
+<body>
+    <div class="left">
+        <div class="image">
+            <img alt="CodeAntAI logo" src="./assests/CodeAnt Logo Bigger.png" />
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <img alt="CodeAntAI logo" src="./assests/CodeAnt Logo.png" />
+                    AI to Detect &amp; Autofix Bad Code
+                </div>
+                <div class="card-content">
+                    <div>
+                        <span>
+                            30+
+                        </span>
+                        Language Support
+                    </div>
+                    <div>
+                        <span>
+                            10K+
+                        </span>
+                        Developers
+                    </div>
+                    <div>
+                        <span>
+                            100K+
+                        </span>
+                        Hours Saved
+                    </div>
+                </div>
+            </div>
+            <div class="card-issues">
+                <div class="percentage">
+                    <div>
+                        <b>14%</b>
+                    </div>
+                    <div class="week">
+                        This week
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class='bx bxs-pie-chart-alt-2' style="color: #9d90fa; font-size: 30px;"></i>
+                    </i>
+                </div>
+                <div class="issues-fixed">
+                    Issues Fixed
+                    <br />
+                    <span class="count">500K+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right-section">
+            <div class="header">
+                <img alt="CodeAnt AI logo" src="./assests/CodeAnt Logo.png" />
+                <h1>
+                    CodeAnt AI
+                </h1>
+            </div>
+            <h2>
+                Welcome to CodeAnt AI
+            </h2>
+            <div class="tabs">
+                <button class="active" id="saas-button" onclick="toggleLoginOptions('saas')">
+                    SAAS
+                </button>
+                <button id="self-hosted-button" onclick="toggleLoginOptions('self-hosted')">
+                    Self Hosted
+                </button>
+            </div>
+
+            <div class="login-options" id="saas-options">
+                <button class="login">
+                    <i class="fab fa-github">
+                    </i>
+                    Sign in with Github
+                </button>
+                <button class="login">
+                    <i class="fab fa-bitbucket">
+                    </i>
+                    Sign in with Bitbucket
+                </button>
+                <button class="login">
+                    <i class="fab fa-microsoft">
+                    </i>
+                    Sign in with Azure Devops
+                </button>
+                <button class="login">
+                    <i class="fab fa-gitlab">
+                    </i>
+                    Sign in with GitLab
+                </button>
+            </div>
+            <div class="login-options" id="self-hosted-options" style="display: none;">
+                <button class="login">
+                    <i class="fab fa-gitlab">
+                    </i>
+                    Sign in with GitLab
+                </button>
+                <button class="login">
+                    <i class="fas fa-key">
+                    </i>
+                    Sign in with SSO
+                </button>
+            </div>
+            <div class="privacy-policy">
+                By signing up you agree to the
+                <a href="#">
+                    Privacy Policy.
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./assests/Sign-Up/sign-up-page-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAnt AI</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main-page-style.css">
+  <link rel="website icon" type="jpg" href="../CodeAnt Logo.png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <div class="logo">
+        <img alt="Logo" height="30" src="../CodeAnt Logo.png" width="30" />
+        <h2>
+          CodeAnt AI
+        </h2>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class='bx bx-menu'></i>
+        </div>
+        <div class="close-icon" onclick="toggleMenu()">
+          <i class='bx bx-x'></i>
+        </div>
+    
+      </div>
+  
+      <div class="sidebar-menu">
+        <div class="user-dropdown">
+          <span>
+            UtkarshDhariyaPanwar
+          </span>
+          <i class='bx bx-chevron-down'></i>
+        </div>
+        <ul>
+          <li>
+            <a class="active" href="#">
+              <i class='bx bx-home'></i>
+              Repositories
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-code-alt'></i>
+              AI Code Review
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-cloud'></i>
+              Cloud Security
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-book'></i>
+              How to Use
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              Settings
+            </a>
+          </li>
+        </ul>
+        <div class="support-logout">
+          <ul>
+            <li>
+              <a href="#">
+                <i class='bx bx-phone'></i>
+                Support
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-log-out'></i>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="header-content">
+        <div class="header">
+          <div>
+            <h1>
+              Repositories
+            </h1>
+            <div class="total-repositories">
+              33 total repositories
+            </div>
+          </div>
+          <div class="actions">
+            <button>
+              <i class='bx bx-refresh'></i>
+              Refresh All
+            </button>
+            <button class="add-repo">
+              <i class='bx bx-plus'></i>
+              Add Repository
+            </button>
+          </div>
+        </div>
+        <div class="search-bar">
+          <i class='bx bx-search'></i>
+          <input placeholder="Search Repositories" type="text" />
+        </div>
+      </div>
+      <div class="repository-list">
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              design-system
+              <span class="badge public">
+                Public
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              React
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              7320 KB
+            </span>
+            <span>
+              Updated 1 day ago
+            </span>
+          </div>
+        </div>
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              codeant-ci-app
+              <span class="badge private">
+                Private
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              Javascript
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              5871 KB
+            </span>
+            <span>
+              Updated 2 days ago
+            </span>
+          </div>
+        </div>
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              analytics-dashboard
+              <span class="badge private">
+                Private
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              Python
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              4521 KB
+            </span>
+            <span>
+              Updated 5 days ago
+            </span>
+          </div>
+        </div>
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              mobile-app
+              <span class="badge public">
+                Public
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              Swift
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              3096 KB
+            </span>
+            <span>
+              Updated 3 days ago
+            </span>
+          </div>
+        </div>
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              e-commerce-platform
+              <span class="badge private">
+                Private
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              Java
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              6210 KB
+            </span>
+            <span>
+              Updated 6 days ago
+            </span>
+          </div>
+        </div>
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              blog-website
+              <span class="badge public">
+                Public
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              HTML/CSS
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              1876 KB
+            </span>
+            <span>
+              Updated 4 days ago
+            </span>
+          </div>
+        </div>
+        <div class="repository-item">
+          <div class="repo-info">
+            <h3>
+              social-network
+              <span class="badge private">
+                Private
+              </span>
+            </h3>
+          </div>
+          <div class="repo-meta">
+            <span>
+              PHP
+              <span class="dot"></span>
+            </span>
+            <span>
+              <i class='bx bx-data'></i>
+              5432 KB
+            </span>
+            <span>
+              Updated 7 days ago
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main-page-script.js"></script>
+</body>
+
+</html>

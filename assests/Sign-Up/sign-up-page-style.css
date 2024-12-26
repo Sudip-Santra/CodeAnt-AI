@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .left, .right {
+    flex: 1; /* Equal width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .left {
+    background-color: white;
+  }
+
+  .left .image img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+
+  .card-header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+  }
+
+  .card-content div {
+    text-align: center;
+  }
+
+  .card-content div span {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .card-issues {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 6px rgba(4, 4, 4, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 120px;
+    right: -20px;
+  }
+
+  .card-issues .percentage {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #007bff;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -10px;
+    background: #9D90FA40;
+
+  }
+
+  .card-issues .percentage .week {
+    color: #000;
+  }
+
+  .card-issues .issues-fixed {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .card-issues .issues-fixed .count {
+    display: flex;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+
+  .card-issues .icon {
+    font-size: 40px;
+    color: #d1c4e9;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .right {
+    background-color: #fafafa;
+  }
+
+  .right-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-section .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .right-section .header img {
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  .right-section .header h1 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .right-section h2 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+
+  .right-section .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .right-section .tabs button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px 80px 15px 80px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+  }
+
+  .right-section .tabs button:last-child {
+    border-radius: 5px;
+  }
+
+  .right-section .tabs button.active {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  .right-section .login-options {
+    width: 100%;
+    max-width: 400px;
+    min-height: 200px;
+  }
+
+  .right-section .login-options button {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-section .login-options button i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .right-section .login-options .fa-bitbucket,.fa-microsoft {
+    color: #3788d8;
+  }
+  .right-section .login-options .fa-gitlab {
+    color: #fe9707;
+  }
+
+  .right-section .login-options button:hover {
+    background-color: #f5f5f5;
+  }
+
+  .right-section .privacy-policy {
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    top: 65px;
+  }
+
+  .right-section .privacy-policy a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+
+  .right-section .privacy-policy a:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .right-section {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 20px;
+    }
+
+    .right-section h2 {
+      font-size: 18px;
+    }
+
+    .right-section .tabs button {
+      padding: 13px 50px ;
+      font-size: 15px;
+      
+    }
+
+    .right-section .login-options button {
+      font-size: 12px;
+      padding: 8px;
+    }
+
+    .right-section .privacy-policy {
+      top: 60px;
+    }
+  }
